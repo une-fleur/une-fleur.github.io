@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+<meta property="og:image:width" content="1100">
+<meta property="og:image:height" content="620">
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+</style>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Questrial&display=swap');
+</style>
+<script src="https://kit.fontawesome.com/fcac58c702.js" crossorigin="anonymous"></script>
+<title>fleur</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Blog</a>
+  <a href="gallery.html">| fleur |<br>gallery</a>
+  <a href="Resource.html">Resource</a>
+  <a href="#">Workshop</a>
+</div>
+<div class="container">
+<!--	sec 1-->
+	<div id="sec1" class="section1">
+		<div class="nav">
+			<div class="logo">
+				<img src="logo-01.png" width="100%" onclick="openNav()">
+			</div>
+			<div class="topmenu">
+				<h4 class="slide-top"><a href="#">Home</a></h4>
+				<h4 class="slide-top"><a href="about.html">about<br>| fleur |</a></h4>
+				<h4 class="slide-top"><a href="contact.html">Contact</a></h4>
+			</div>
+			<div class="search">
+				<h4><i class="fas fa-search"></i></h4>
+			</div>
+		</div>
+		<div class="hoa">
+			<img src="image-from-rawpixel-id-582861-original.png" width="37%">
+		</div>
+		<div class="dieuhuong">
+			<p><a href="#sec2">&larr; from the inside out</a></p>
+		</div>
+	</div>
+	
+<!-- sec 2 -->
+	<div id="sec2" class="section2">
+		<div class="hinhanh2" align="center">
+		<img class="left" src="image-from-rawpixel-id-434794-jpeg.jpg" width="18%">
+		<img class="right" src="image-from-rawpixel-id-3284559-original.jpg" width="30%">
+		</div>
+		<p>Ở Đà Lạt, những cánh đồng của <i style="font-size:11pt">| fleur|</i> ngập tràn những bông hoa theo mùa, từ những hạt đậu ngọt thơm vào mùa xuân đến những bông hoa cúc tuyệt đẹp vào mùa thu. Nghiên cứu là trọng tâm của hoạt động của chúng tôi, và chúng tôi tiến hành các cuộc thử nghiệm rộng rãi để tìm ra những giống hoa cắt cành tốt nhất và phẩm chất thanh tao của chúng.<br><i style="font-size:11pt">| fleur|</i> biết rằng những điều tuyệt vời có thể xảy ra khi bạn lắng nghe trái tim mình, làm theo trái tim mình và sống theo đam mê của mình.</p>
+		<h5 align="center"><a href="#sec3"> JOIN US<br>&darr;</a></h5>
+	</div>
+<!-- sec 3 -->
+	<div id="sec3" class="section3">
+		<div class="form" align="center">
+		<div class="nd1">
+			<h2>JOIN US</h2>
+			<p>Cập nhật thêm thông tin về| fleur | và tất cả các sự kiện hấp dẫn khác.</p>
+			<hr>
+			<p>| fleur | sẽ gửi đến bạn những mẹo trồng hoa hữu ích, các ưu đãi đặc biệt, thông báo trước về các buổi workshop sắp tới và các tin tức thú vị về các khóa học trồng hoa ngắn hại tại trang trại.</p>
+			<input type="text"  placeholder="First Name" ><br>
+			<input type="text"  placeholder="Email" >
+			<button>GET UPDATES</button>
+		</div>
+		<div class="nd2">
+			<img src="zoe-schaeffer-H0iAXFekiWo-unsplash.jpg" width="100%" >
+		</div>
+		</div>
+		<h5 align="center"><a href="#sec1">	&uarr;</a></h5>
+	</div>
+	<div class="footer">
+			<h4><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></h4>
+			<h4><a href="#"><i class="fab fa-instagram-square"></i> Instagram</a></h4>
+			<h4><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></h4>
+	</div>
+	
+	
+	</div>	
+	
+	
+	
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor2" id="cursor2"></div>
+
+
+	<script>
+		document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2");
+    function n(t) {
+        e.classList.add("hover")
+    }
+    function s(t) {
+        e.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-link"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+
+	//Color change on scroll
+
+	$('.section li:nth-child(2)').on('mouseover', function(event) {				
+		$('body').addClass('color-cyan');
+	});				
+	$('.section li:nth-child(2)').on('mouseout', function(event) {			
+		$('body').removeClass('color-cyan');
+	});
+
+	$('.section li:nth-child(3)').on('mouseover', function(event) {				
+		$('body').addClass('color-red');
+	});				
+	$('.section li:nth-child(3)').on('mouseout', function(event) {			
+		$('body').removeClass('color-red');
+	});
+
+	$('.section li:nth-child(4)').on('mouseover', function(event) {				
+		$('body').addClass('color-blue');
+	});				
+	$('.section li:nth-child(4)').on('mouseout', function(event) {			
+		$('body').removeClass('color-blue');
+	});
+
+	$('.section li:nth-child(5)').on('mouseover', function(event) {				
+		$('body').addClass('color-yellow');
+	});				
+	$('.section li:nth-child(5)').on('mouseout', function(event) {			
+		$('body').removeClass('color-yellow');
+	});
+
+	$('.section li:nth-child(6)').on('mouseover', function(event) {				
+		$('body').addClass('color-violet');
+	});				
+	$('.section li:nth-child(6)').on('mouseout', function(event) {		
+		$('body').removeClass('color-violet');
+	});
+
+	$('.section li:nth-child(7)').on('mouseover', function(event) {				
+		$('body').addClass('preload');
+	});				
+	$('.section li:nth-child(7)').on('mouseout', function(event) {		
+		$('body').removeClass('preload');
+	});
+
+	$('.section li:nth-child(8)').on('mouseover', function(event) {				
+		$('body').addClass('preload1');
+	});				
+	$('.section li:nth-child(8)').on('mouseout', function(event) {		
+		$('body').removeClass('preload1');
+	});
+
+	$('.section li:nth-child(9)').on('mouseover', function(event) {				
+		$('body').addClass('preload2');
+	});				
+	$('.section li:nth-child(9)').on('mouseout', function(event) {		
+		$('body').removeClass('preload2');
+	});
+
+	$('.section li:nth-child(10)').on('mouseover', function(event) {				
+		$('body').addClass('bars');
+	});				
+	$('.section li:nth-child(10)').on('mouseout', function(event) {		
+		$('body').removeClass('bars');
+	});
+	</script>
+	
+	
+	
+
+	
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>

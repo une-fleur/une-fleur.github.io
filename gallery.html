@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+</style>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Questrial&display=swap');
+</style>
+<script src="https://kit.fontawesome.com/fcac58c702.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet"  href="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css"/>
+<title>fleur Gallery</title>
+<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+
+	
+<body>
+<!--	sec 1-->
+	<div id="sec1" class="section1">
+		<div class="nav">
+			<div class="logo">
+				<a href="index.html"><img src="logo-01.png" width="100%"></a>
+			</div>
+			<div class="topmenu">
+				<h4 class="slide-top"><a href="#">Blog</a></h4>
+				<h4 class="slide-top"><a href="about.html">about<br>| fleur |</a></h4>
+				<h4 class="slide-top"><a href="#">| fleur |<br>gallery</a></h4>
+				<h4 class="slide-top"><a href="Resource.html">Resource</a></h4>
+				<h4 class="slide-top"><a href="#">Workshop</a></h4>
+				<h4 class="slide-top"><a href="contact.html">Contact</a></h4>
+			</div>
+			<div class="search">
+				<h4><i class="fas fa-search"></i></h4>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="scroll-animations-example" data-scroll-container>
+    <div class="scrollsection" data-scroll-section>
+        <div class="item -normal" data-scroll data-scroll-speed="2">
+            <img  class="image" src="gallery/alora-griffiths-WyaBI-DIuYw-unsplash.jpg">
+        </div>
+        <div class="item -big" data-scroll data-scroll-speed="1">
+            <img class="image" src="gallery/anton-darius-DegoUNMMf8o-unsplash.jpg">
+        </div>
+        <div class="item -small -horizontal" data-scroll data-scroll-speed="4">
+            <img class="image" src="gallery/ellicia-24HcJhf0u6M-unsplash.jpg">
+        </div>
+        <div class="item -normal" data-scroll data-scroll-speed="3">
+            <img class="image" src="gallery/chloe-frost-smith-sBJt7q88v-w-unsplash.jpg">
+        </div>
+        <div class="item -normal -horizontal" data-scroll data-scroll-speed="2">
+            <img class="image" src="gallery/andreas-kretschmer-zUytXs3fusw-unsplash.jpg">
+        </div>
+        <div class="item -big -horizontal" data-scroll data-scroll-speed="4">
+            <img class="image" src="gallery/roma-kaiuk-kwxoxL279Rs-unsplash.jpg">
+        </div>
+        <div class="item -small" data-scroll data-scroll-speed="2">
+            <img class="image" src="gallery/jonathan-borba-ETQ5gJptPes-unsplash.jpg">
+        </div>
+        <div class="item -normal -horizontal" data-scroll data-scroll-speed="1">
+            <img class="image" src="gallery/bianka-csenki--nxksGFSoeM-unsplash.jpg">
+        </div>
+        <div class="item -small -horizontal" data-scroll data-scroll-speed="3">
+            <img class="image" src="gallery/zoe-schaeffer-u7POlmef6lU-unsplash.jpg">
+        </div>
+        <div class="item -big" data-scroll data-scroll-speed="1">
+            <img class="image" src="gallery/s-o-c-i-a-l-c-u-t-sBqiND8rQ8s-unsplash.jpg">
+        </div>
+        
+        <div class="item -normal -horizontal" data-scroll data-scroll-speed="2">
+            <img class="image" src="gallery/mira-van-der-veen-8KoIcbsdoAg-unsplash.jpg">
+        </div>
+        <div class="item -normal -horizontal" data-scroll data-scroll-speed="1">
+            <img class="image" src="gallery/dimitri-iakymuk-mCR10j_B6sM-unsplash.jpg">
+        </div>
+        <div class="item -small -horizontal" data-scroll data-scroll-speed="4">
+            <img class="image" src="gallery/roman-kraft-_oH66az_yug-unsplash.jpg">
+        </div>
+        <div class="item -big" data-scroll data-scroll-speed="3">
+            <img class="image" src="gallery/visual-stories-micheile-oUyXWLksaPg-unsplash.jpg">
+        </div>
+        <div class="item -normal -horizontal" data-scroll data-scroll-speed="2">
+            <img class="image" src="gallery/mak-2YjZZXkiQsY-unsplash.jpg">
+        </div>
+        <div class="item -small -horizontal" data-scroll data-scroll-speed="4">
+            <img class="image" src="gallery/mio-ito-tYNLwRxFsQc-unsplash.jpg">
+        </div>
+        <div class="item -big" data-scroll data-scroll-speed="2">
+            <img class="image" src="gallery/perchek-industrie-dlTcg14mxmE-unsplash.jpg">
+        </div>
+        <div class="item -normal -horizontal" data-scroll data-scroll-speed="1">
+            <img class="image" src="gallery/visual-stories-micheile-khu-SpA4Bl0-unsplash.jpg">
+        </div>
+        <div class="item -small -horizontal" data-scroll data-scroll-speed="3">
+            <img class="image" src="gallery/neslihan-gunaydin-Ts0830UlVOM-unsplash.jpg">
+        </div>
+        <div class="item -normal" data-scroll data-scroll-speed="1">
+            <img class="image" src="gallery/priscilla-du-preez-Aat4l6Nzowc-unsplash.jpg">
+        </div>
+    </div>
+</div>
+	
+	
+	<div class="cursor" id="cursor"></div>
+  <div class="cursor2" id="cursor2"></div>
+
+
+	<script>
+		document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2");
+    function n(t) {
+        e.classList.add("hover")
+    }
+    function s(t) {
+        e.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-link"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+
+	//Color change on scroll
+
+	$('.section li:nth-child(2)').on('mouseover', function(event) {				
+		$('body').addClass('color-cyan');
+	});				
+	$('.section li:nth-child(2)').on('mouseout', function(event) {			
+		$('body').removeClass('color-cyan');
+	});
+
+	$('.section li:nth-child(3)').on('mouseover', function(event) {				
+		$('body').addClass('color-red');
+	});				
+	$('.section li:nth-child(3)').on('mouseout', function(event) {			
+		$('body').removeClass('color-red');
+	});
+
+	$('.section li:nth-child(4)').on('mouseover', function(event) {				
+		$('body').addClass('color-blue');
+	});				
+	$('.section li:nth-child(4)').on('mouseout', function(event) {			
+		$('body').removeClass('color-blue');
+	});
+
+	$('.section li:nth-child(5)').on('mouseover', function(event) {				
+		$('body').addClass('color-yellow');
+	});				
+	$('.section li:nth-child(5)').on('mouseout', function(event) {			
+		$('body').removeClass('color-yellow');
+	});
+
+	$('.section li:nth-child(6)').on('mouseover', function(event) {				
+		$('body').addClass('color-violet');
+	});				
+	$('.section li:nth-child(6)').on('mouseout', function(event) {		
+		$('body').removeClass('color-violet');
+	});
+
+	$('.section li:nth-child(7)').on('mouseover', function(event) {				
+		$('body').addClass('preload');
+	});				
+	$('.section li:nth-child(7)').on('mouseout', function(event) {		
+		$('body').removeClass('preload');
+	});
+
+	$('.section li:nth-child(8)').on('mouseover', function(event) {				
+		$('body').addClass('preload1');
+	});				
+	$('.section li:nth-child(8)').on('mouseout', function(event) {		
+		$('body').removeClass('preload1');
+	});
+
+	$('.section li:nth-child(9)').on('mouseover', function(event) {				
+		$('body').addClass('preload2');
+	});				
+	$('.section li:nth-child(9)').on('mouseout', function(event) {		
+		$('body').removeClass('preload2');
+	});
+
+	$('.section li:nth-child(10)').on('mouseover', function(event) {				
+		$('body').addClass('bars');
+	});				
+	$('.section li:nth-child(10)').on('mouseout', function(event) {		
+		$('body').removeClass('bars');
+	});
+	</script>
+	
+	
+	
+	
+	<script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+	<script>
+		class Example {
+  constructor(options) {
+    this.root = options.root;
+
+    this.init();
+
+    setTimeout(this.showImages.bind(this), 1000);
+  }
+
+  init() {
+    this.scroll = new LocomotiveScroll({
+      el: this.root,
+      direction: 'horizontal',
+      smooth: true,
+      lerp: 0.05,
+      tablet: {
+        smooth: true },
+
+      smartphone: {
+        smooth: true } });
+
+
+
+    this.images = this.root.querySelectorAll('.image');
+
+    [].forEach.call(this.images, image => {
+      image.addEventListener('click', () => {
+        image.classList.add('-clicked');
+        this.hideImages();
+      });
+    });
+  }
+
+  showImages() {
+    [].forEach.call(this.images, image => {
+      image.classList.remove('-clicked');
+      image.classList.add('-active');
+    });
+  }
+
+  hideImages() {
+    [].forEach.call(this.images, image => {
+      image.classList.remove('-active');
+    });
+
+    setTimeout(this.showImages.bind(this), 2000);
+  }}
+
+
+
+window.addEventListener('DOMContentLoaded', event => {
+  const example = new Example({
+    root: document.querySelector('.scroll-animations-example') });
+
+});
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

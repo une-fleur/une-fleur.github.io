@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("image-from-rawpixel-id-2453717-original.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+.phan2 {
+	background-color:rgba(253,210,191,0.6);
+	background-size:cover;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(13px);
+	border-radius: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 60px 0px 30px;
+}
+.container {
+	font-family: 'Questrial', sans-serif;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	border-top: 0.1px solid rgba(38,13,14,0.26);
+	border-bottom: 0.1px solid rgba(38,13,14,0.26);
+	
+}
+.container .left,.right {
+	width: 600px;
+	padding: 50px;
+}
+.container h1 {
+	font-size: 120pt;
+	margin-bottom: 40px;
+}
+.container .right {
+	text-align: center;
+}
+.container .left {
+	border-right: 0.1px solid rgba(38,13,14,0.26);
+	font-size: 10pt;
+}
+.container .left p {
+	width: 530px;
+}
+.container .left input {
+	background-color:rgba(215,189,190,0.00);
+	width: 500px;
+	border-bottom: 0.1px solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-family: 'Questrial', sans-serif;
+	color:#492F10;
+	font-size: 11pt;
+	padding: 10px;
+}
+.container .left button {
+	text-align: center;
+	margin-top: 15px;
+	width: 520px;
+	padding: 15px;
+	border: 0.3px solid rgba(57,34,35,0.50);
+	background-color:rgba(225,191,179,0.00);
+	font-family: 'Questrial', sans-serif;
+}
+.phan2 .lienhe {
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+	font-size: 10pt;
+	padding: 20px 30px 0px;
+}
+
+.section1 .nav .logo {
+	width: 60px;
+	cursor:pointer;
+}
+.section1 .nav {
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	padding: 20px 0px;
+	position: fixed;
+	width: 100%;
+	font-family: 'Questrial', sans-serif;
+}
+.section1 .topmenu {
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	margin: 0px 350px;
+}
+.section1 .topmenu h4 {
+	padding: 0 35px;
+}
+.section1 .topmenu h4:hover {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+.section1 a {
+	text-decoration:none;
+	color: #492F10;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgba(232,232,232,0.3);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+  backdrop-filter: blur(7px); 
+  border:rgba(210,210,210,1.00) thin 0.5px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.sidenav a {
+  padding: 20px 10px 10px 38px;
+  text-decoration: none;
+  font-size: 13pt;
+  color:rgba(150,150,150,1.00);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:rgba(0,0,0,1.00);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 20pt;
+  margin-left: 50px;
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+/* #Cursor
+================================================== */
+
+.cursor,
+.cursor2{
+	position: fixed;
+	border-radius: 50%;	
+	transform: translateX(-50%) translateY(-50%);
+	pointer-events: none;
+	left: -100px;
+	top: 50%
+}
+.cursor{
+	height: 0;
+	width: 0;
+	z-index: 99999;
+}
+.cursor2{
+	height: 36px;
+	width: 36px;
+	z-index:99998;
+	-webkit-transition:all 0.3s ease-out;
+	transition:all 0.3s ease-out
+}
+.cursor2{
+	border: 3px solid #fff;
+	box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+}
+.cursor2.hover{
+	-webkit-transform:scale(2) translateX(-25%) translateY(-25%);
+	transform:scale(2) translateX(-25%) translateY(-25%);
+	border:none;
+	background: rgba(255,255,255,.1);
+	box-shadow: 0 0 14px rgba(255, 255, 255, 0.3);
+}
+.container button:hover {
+	background-color:rgba(238,168,131,0.81);
+}
+.footer {
+	position:absolute;
+	top: 93%;
+	display: flex;
+	justify-content:space-around;
+	padding: 20px 0px;
+	width: 100%;
+	border-top: 0.1px solid rgba(43,21,22,0.21);
+}
+.footer a {
+	text-decoration: none;
+	font-family: 'Questrial', sans-serif;
+	font-size: 10pt;
+	color:rgba(0,0,0,1.00);
+}

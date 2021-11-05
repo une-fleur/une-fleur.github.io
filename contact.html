@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+</style>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Questrial&display=swap');
+</style>
+<script src="https://kit.fontawesome.com/fcac58c702.js" crossorigin="anonymous"></script>
+<title>| fleur | contact</title>
+<link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Blog</a>
+  <a href="gallery.html">| fleur |<br>gallery</a>
+  <a href="#">Resource</a>
+  <a href="#">Workshop</a>
+</div>
+	
+	<!--	sec 1-->
+	<div id="sec1" class="section1">
+		<div class="nav">
+			<div class="logo">
+				<img src="logo-01.png" width="100%" onclick="openNav()">
+			</div>
+			<div class="topmenu">
+				<h4 class="slide-top"><a href="index.html">Home</a></h4>
+				<h4 class="slide-top"><a href="about.html">about<br>| fleur |</a></h4>
+				<h4 class="slide-top"><a href="#">Contact</a></h4>
+			</div>
+			<div class="search">
+				<h4><i class="fas fa-search"></i></h4>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="phan2">
+	<div class="container">
+		<div class="left">
+			<p>Đến với <i style="font-size:12pt">| fleur|</i> các bạn sẽ được nhìn ngắm đầy đủ các loại hoa và kiểu hoa được kết khéo léo hoàn toàn mới nhưng vẫn toát lên vẻ đẹp tự nhiên vốn có của mỗi loài hoa. Từ những nguyên liệu cơ bản kết hợp với sự khéo léo của đôi bàn tay người thợ, <i style="font-size:12pt">| fleur|</i> đã thổi vào đó một hồn hoa tinh tế với màu sắc thật tự nhiên, mềm mại. Bên cạnh vẻ đẹp tươi tắn, sinh động đó, mỗi giỏ hoa còn có độ tươi bền lâu, góp phần tăng thêm giá trị vẻ đẹp.</p>
+			<input type="text" name="txtTen" value="Name"><br>
+			<input type="text" name="txtTen" value="Email">
+			<input type="text" name="txtTen" value="Share your thoughts">
+			<button> SHARE YOUR FEEDBACK </button>
+		</div>
+		
+		<div class="right">
+			<h1> | fleur | </h1>
+			<p style="font-size:10pt">Hoa luôn làm cho mọi người tốt hơn, hạnh phúc hơn,<br> và hữu ích hơn. Chúng là ánh nắng mặt trời,<br>thức ăn và thuốc cho tâm hồn.</p>
+		</div>
+	</div>
+		<div class="lienhe">
+			<div>
+				<h5>Điện thoại</h5>
+				<h4>0386-273-753</h4>
+			</div>
+			<div>
+				<h5>Địa chỉ</h5>
+				<h4>Tổ Thái Phát, Thái Phiên, Phường 12, Tp.Đà Lạt</h4>
+			</div>
+			<div>
+				<h5>Email</h5>
+				<h4>fleur-famr@gmail.com</h4>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="footer">
+			<h4><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></h4>
+			<h4><a href="#"><i class="fab fa-instagram-square"></i> Instagram</a></h4>
+			<h4><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></h4>
+	</div>
+	
+	
+	
+	<div class="cursor" id="cursor"></div>
+  <div class="cursor2" id="cursor2"></div>
+
+
+	<script>
+		document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2");
+    function n(t) {
+        e.classList.add("hover")
+    }
+    function s(t) {
+        e.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-link"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+
+	//Color change on scroll
+
+	$('.section li:nth-child(2)').on('mouseover', function(event) {				
+		$('body').addClass('color-cyan');
+	});				
+	$('.section li:nth-child(2)').on('mouseout', function(event) {			
+		$('body').removeClass('color-cyan');
+	});
+
+	$('.section li:nth-child(3)').on('mouseover', function(event) {				
+		$('body').addClass('color-red');
+	});				
+	$('.section li:nth-child(3)').on('mouseout', function(event) {			
+		$('body').removeClass('color-red');
+	});
+
+	$('.section li:nth-child(4)').on('mouseover', function(event) {				
+		$('body').addClass('color-blue');
+	});				
+	$('.section li:nth-child(4)').on('mouseout', function(event) {			
+		$('body').removeClass('color-blue');
+	});
+
+	$('.section li:nth-child(5)').on('mouseover', function(event) {				
+		$('body').addClass('color-yellow');
+	});				
+	$('.section li:nth-child(5)').on('mouseout', function(event) {			
+		$('body').removeClass('color-yellow');
+	});
+
+	$('.section li:nth-child(6)').on('mouseover', function(event) {				
+		$('body').addClass('color-violet');
+	});				
+	$('.section li:nth-child(6)').on('mouseout', function(event) {		
+		$('body').removeClass('color-violet');
+	});
+
+	$('.section li:nth-child(7)').on('mouseover', function(event) {				
+		$('body').addClass('preload');
+	});				
+	$('.section li:nth-child(7)').on('mouseout', function(event) {		
+		$('body').removeClass('preload');
+	});
+
+	$('.section li:nth-child(8)').on('mouseover', function(event) {				
+		$('body').addClass('preload1');
+	});				
+	$('.section li:nth-child(8)').on('mouseout', function(event) {		
+		$('body').removeClass('preload1');
+	});
+
+	$('.section li:nth-child(9)').on('mouseover', function(event) {				
+		$('body').addClass('preload2');
+	});				
+	$('.section li:nth-child(9)').on('mouseout', function(event) {		
+		$('body').removeClass('preload2');
+	});
+
+	$('.section li:nth-child(10)').on('mouseover', function(event) {				
+		$('body').addClass('bars');
+	});				
+	$('.section li:nth-child(10)').on('mouseout', function(event) {		
+		$('body').removeClass('bars');
+	});
+	</script>
+	
+	
+	
+
+	
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+	
+	
+	
+	
+</body>
+</html>
